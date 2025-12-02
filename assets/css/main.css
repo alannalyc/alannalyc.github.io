@@ -8613,7 +8613,6 @@ input, select, textarea {
     background: linear-gradient(135deg, var(--purple-dark), var(--purple-light));
     color: var(--text-light);
     width: 100%;
-    position: fixed;                 /* Always visible */
     top: 0;
     left: 0;
     z-index: 1000;
@@ -8679,9 +8678,9 @@ input, select, textarea {
 }
 
 /* Push down content to compensate for fixed header */
-#wrapper {
+/* #wrapper {
     padding-top: 90px;
-}
+} */
 
 /* Responsive Navigation */
 @media screen and (max-width: 768px) {
