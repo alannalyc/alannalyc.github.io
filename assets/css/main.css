@@ -8710,7 +8710,7 @@ input, select, textarea {
 
 :root {
     --purple-dark: #853a65;     /* header, major blocks */
-    --purple-light: #6f3c77;    /* softer purple tone */
+    --purple-light: #2a102e;    /* softer purple tone */
     --teal-accent: #3eb8b4;     /* link + highlight accent */
     --text-light: #f5f5f7;
     --text-mid: #dcd5e6;

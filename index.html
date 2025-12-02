@@ -6,6 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+    <style>
+        /* Hero Section Styling */
+        .banner.style1 {
+            padding: 5rem 1rem;
+            min-height: auto;
+            background: linear-gradient(135deg, #1a1a1a 0%, #044d55 100%);
+            color: #ffffff; /* White text */
+            text-align: center;
+        }
+        .banner.style1 .content h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .banner.style1 .content p {
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+
+        /* Skills horizontal layout */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        .skill-item {
+            text-align: center;
+            flex: 1 1 180px;
+        }
+        .skill-item h3 {
+            margin-bottom: 0.5rem;
+        }
+        .skill-item p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -13,86 +51,70 @@
 
     <!-- Header -->
     <header id="header">
-        <h1><a href="javascript:void(0)">Alanna Cooney's Portfolio</a></h1>
+        <h1><a href="index.html">Alanna Cooney's Portfolio</a></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="artwork.html">Artwork</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Artwork</a></li>
+                <li><a href="index.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="banner style1 orient-left content-align-left fullscreen image-position-right">
+    <!-- Hero / Portfolio Under Renovation -->
+    <section class="banner style1 orient-left content-align-left">
         <div class="content">
-            <h1>Hello, I'm Alanna</h1>
+            <h1 style="color: white;">Hello, I'm Alanna!</h1>
             <p class="major">
-                A UX designer, creative technologist, illustrator, and writer with a global upbringing
-                across Shanghai, Hong Kong, Buenos Aires, Honolulu, and the U.S. East Coast.
-                I focus on human-centered design, cultural storytelling, and crafting thoughtful digital experiences.
+                My portfolio is currently under renovation! Check back soon to explore my updated projects and artwork.
             </p>
-            <ul class="actions stacked">
-                <li><a href="projects.html" class="button big wide smooth-scroll-middle">View My Work</a></li>
-            </ul>
-        </div>
-        <div class="image">
-            <img src="images/banner.jpg" alt="Banner image of Alanna Cooney">
         </div>
     </section>
 
     <!-- About Me -->
-    <section class="spotlight style1 orient-right content-align-left image-position-center">
+    <section class="spotlight style1 orient-right content-align-left">
         <div class="content">
             <h2>About Me</h2>
             <p>
-                I’m studying Information Science (UX Design, Digital Culture) & Asian Studies at Cornell University.
-                My work blends design, research, and narrative—from mobile games and UX systems to art and creative writing.
+                At Cornell University, I study Information Science (UX Design, Digital Culture) & Asian Studies with a focus on China.
+                My work blends design, research, and narrative—from mobile games and UX systems to art and creative writing. 
             </p>
             <p>
                 My global background shapes my approach: I design for diverse audiences, multilingual environments,
-                and cross-cultural storytelling. I'm passionate about user experience, visual design, education,
-                community projects, and creative technology.
+                and cross-cultural storytelling. I'm passionate about creating human-centered user experiences that address real pain points,
+                visual designs that stand out through artistic innovation, and leveraging AI technology to support community projects.
             </p>
-        </div>
-        <div class="image">
-            <img src="images/spotlight01.jpg" alt="Alanna Cooney at work">
+            <p>
+                I've had the opportunity to work for organizations like the 
+                <strong style="font-weight: bold;">Brookings Institution</strong> in Washington, D.C. as well as 
+                <strong style="font-weight: bold;">Central Pacific Bank</strong> and 
+                <strong style="font-weight: bold;">Hawaiian Electric</strong> in my home state of Hawaii.
+            </p>
         </div>
     </section>
 
-    <!-- Interests -->
+    <!-- Skills / Interests Horizontal Section -->
     <section class="wrapper style1 align-center">
         <div class="inner">
-            <h2>My Interests</h2>
-            <p>A collection of the things that inspire my work and shape my perspective.</p>
-        </div>
-
-        <div class="items style1 medium onscroll-fade-in">
-            <div>
-                <section>
-                    <span class="icon solid style2 major fa-globe"></span>
-                    <h3>Global Culture</h3>
-                    <p>Cross-cultural research, multilingual communication, international experience.</p>
-                </section>
-
-                <section>
-                    <span class="icon solid style2 major fa-paint-brush"></span>
-                    <h3>Design</h3>
-                    <p>UX design, UI systems, interaction design, branding, digital art.</p>
-                </section>
-
-                <section>
-                    <span class="icon solid style2 major fa-gamepad"></span>
+            <h2>My Skills & Interests</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <h3>UX Design</h3>
+                    <p>Designing interfaces and flows that prioritize human-centered user experiences.</p>
+                </div>
+                <div class="skill-item">
                     <h3>Game Development</h3>
-                    <p>Creative direction, UI/UX, player experience, worldbuilding.</p>
-                </section>
-
-                <section>
-                    <span class="icon solid style2 major fa-leaf"></span>
-                    <h3>Art</h3>
-                    <p>Nature drawings, illustration, creative writing, fiber arts.</p>
-                </section>
+                    <p>Creative direction and interaction design for engaging digital experiences.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Cross-Cultural Communication</h3>
+                    <p>Collaborating with global teams and designing for diverse audiences.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Artwork</h3>
+                    <p>Illustration, fiber arts, and visual storytelling to express creative ideas.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -101,9 +123,10 @@
     <footer class="wrapper style1 align-center">
         <div class="inner footer-contact">
             <p class="footer-message">
-                <span role="img" aria-label="waving hand">👋</span>
-                <span class="contact-text">alc356@cornell.edu</span> or 
-                <span class="contact-text">+1 808-388-7365</span>.
+                <p>Contact me at 
+                    <span class="contact-text">alannac1029@gmail.com</span> or 
+                    <span class="contact-text">+1 808-388-7365</span> to learn more about my work!
+                </p>
             </p>
             <a href="https://linkedin.com/in/alannalyc/" class="button small icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer">
                 LinkedIn
