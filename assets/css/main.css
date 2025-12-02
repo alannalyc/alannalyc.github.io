@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -89,6 +90,7 @@ input, select, textarea {
 		}
 
 	}
+	
 
 	html {
 		box-sizing: border-box;
@@ -8601,3 +8603,264 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+			
+/* ================================
+   CUSTOM HEADER FOR ALANNA'S PORTFOLIO
+   ================================ */
+
+#header {
+    background: linear-gradient(135deg, var(--purple-dark), var(--purple-light));
+    color: var(--text-light);
+    width: 100%;
+    position: fixed;                 /* Always visible */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+
+/* Header Title */
+/* Header Title */
+#header h1 {
+    display: flex;              /* make h1 a flex container */
+    align-items: center;        /* vertically center text */
+    margin: 0;                  /* remove default margin */
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+#header h1 a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color .25s;
+    line-height: 1;             /* ensures vertical centering */
+}
+
+#header h1 a:hover {
+    color: var(--teal-accent);
+}
+
+
+/* Navigation Container */
+#header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Links */
+#header nav ul li a {
+    color: var(--text-mid);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    transition: all .25s ease;
+}
+
+/* Hover State */
+#header nav ul li a:hover {
+    color: var(--teal-accent);
+    border-bottom: 2px solid var(--teal-accent);
+}
+
+/* Active Page Highlight */
+#header nav ul li a.active {
+    color: var(--teal-accent);
+    border-bottom: 2px solid var(--teal-accent);
+}
+
+/* Push down content to compensate for fixed header */
+#wrapper {
+    padding-top: 90px;
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.25rem;
+    }
+
+    #header nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    #header nav ul li a {
+        font-size: 1.05rem;
+        padding: 0.25rem 0;
+    }
+}
+
+/* ======================================
+   GLOBAL COLOR THEME
+   ====================================== */
+
+:root {
+    --purple-dark: #853a65;     /* header, major blocks */
+    --purple-light: #6f3c77;    /* softer purple tone */
+    --teal-accent: #3eb8b4;     /* link + highlight accent */
+    --text-light: #f5f5f7;
+    --text-mid: #dcd5e6;
+}
+
+/* ======================================
+   HEADINGS & MAJOR TEXT (Purple Accents)
+   ====================================== */
+
+h1, h2, h3 {
+    color: var(--purple-dark);
+}
+
+.banner .content h1,
+.wrapper h1 {
+    color: var(--purple-dark);
+}
+
+.wrapper h2 {
+    color: var(--purple-light);
+    border-bottom: 2px solid var(--teal-accent);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* ======================================
+   LINKS (Teal Accent)
+   ====================================== */
+
+a {
+    color: var(--teal-accent);
+    transition: color .25s ease;
+}
+
+a:hover {
+    color: #2ee1dc; /* brighter teal hover */
+}
+
+/* Buttons */
+.button {
+    background-color: var(--purple-dark);
+    color: var(--text-light) !important;
+    border: 1px solid var(--purple-dark);
+}
+
+.button:hover {
+    background-color: var(--teal-accent);
+    border-color: var(--teal-accent);
+    color: #ffffff !important;
+}
+
+/* ======================================
+   GALLERY + CARD COMPONENTS
+   ====================================== */
+
+.gallery .caption h3 {
+    color: var(--purple-light);
+}
+
+.gallery .caption p {
+    color: var(--text-mid);
+}
+
+/* ======================================
+   FOOTER
+   ====================================== */
+
+footer {
+    background: linear-gradient(135deg, var(--purple-dark), var(--purple-light));
+    color: var(--text-light);
+}
+
+footer a {
+    color: var(--teal-accent);
+}
+
+footer .contact-text {
+    font-weight: 600;
+    color: var(--teal-accent); /* changed from light to teal */
+}
+
+
+footer a:hover {
+    color: #2ee1dc;
+}
+
+/* ======================================
+   TYPOGRAPHY SYSTEM: SPACE GROTESK + INTER
+   ====================================== */
+
+/* Global body text */
+html, body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+/* Headings use Space Grotesk */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--purple-dark);
+}
+
+/* Section titles */
+.wrapper h2,
+.banner .content h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+}
+
+/* Buttons */
+.button,
+button,
+input[type="submit"] {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+/* Nav */
+#header nav ul li a {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+/* Gallery captions */
+.gallery .caption h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+}
+
+.gallery .caption p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+/* Forms */
+input, textarea, select {
+    font-family: "Inter", sans-serif;
+}
+
+/* Eyebrow / subtle labels */
+.eyebrow {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    color: var(--teal-accent);
+}
+
+
