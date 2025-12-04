@@ -1,0 +1,23 @@
+/* Custom Cursor Styles */
+* {
+    cursor: none !important;
+}
+
+.cursor {
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    border: 4px solid #a8ffff;
+    border-radius: 50%;
+    background-color: rgba(168, 255, 255, 0.4);
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+    mix-blend-mode: difference;
+}
+
+.cursor.hovering {
+    background-color: rgba(168, 255, 255, 0.6);
+    border-color: #ffb0ee;
+}
